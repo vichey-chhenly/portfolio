@@ -18,7 +18,7 @@
   }
   #hamburger-nav {
     display: flex;
-    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.136);
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.445);
   }
   #experience,
   .experience-details-container {
