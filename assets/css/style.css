@@ -126,7 +126,7 @@
   .hero-pic img {
     height: 100%;
     object-fit: cover;
-    object-position: top -1.3rem;
+    object-position: top -1.3rem right 0;
     transform: scale(1.9);
   }
   
@@ -135,12 +135,12 @@
     font-weight: 400;
   }
 
-  /* .hero-info h1 img{
-    height: 23px;
+  .hero-info h1 img{
+    height: 20px;
     object-fit: cover;
     margin-bottom: -5px;
   }
-   */
+  
   article p,
   .hero-info h2 {
     color: var(--secondary-color);
