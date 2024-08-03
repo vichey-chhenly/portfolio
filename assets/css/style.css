@@ -68,6 +68,7 @@
   .logo-container,
   .experience,
   .cta,
+  .cta-2,
   .portfolio-skills,
   .btn-bg,
   .portfolio,
@@ -159,6 +160,7 @@
   .logo-container,
   .experience,
   .cta,
+  .cta-2,
   .portfolio-skills,
   .btn-bg {
     justify-content: center;
@@ -189,14 +191,20 @@
   .cta {
     margin-top: 1.2rem;
   }
+
+  .cta-2 {
+    margin-top: 1rem;
+  }
   
   .cta,
+  .cta-2,
   .btn-bg {
     gap: 2rem;
   }
   
   .btn,
   .btn-2,
+  .btn-3,
   .btn-bg {
     border-radius: 0.7rem;
     border: none;
@@ -204,6 +212,7 @@
   
   .btn,
   .btn-2,
+  .btn-3,
   .btn-bg,
   .wrapper h3 {
     font-weight: 600;
@@ -211,6 +220,7 @@
   
   .btn,
   .btn-2,
+  .btn-3,
   .btn-bg,
   .wrapper,
   .project-wrapper {
@@ -232,6 +242,7 @@
   
   .btn:hover,
   .btn-2:hover,
+  .btn-3:hover,
   .project-wrapper:hover,
   .logo-container a:hover {
     transform: scale(0.98);
@@ -239,6 +250,7 @@
   
   .btn:active,
   .btn-2:active,
+  .btn-3:active,
   .project-wrapper:active,
   .logo-container a:active {
     transform: scale(1);
@@ -260,7 +272,8 @@
   }
   
   .btn,
-  .btn-2 {
+  .btn-2,
+  .btn-3 {
     height: 3rem;
   }
   
@@ -270,6 +283,10 @@
   
   .btn-2 {
     width: 8.5rem;
+  }
+
+  .btn-3 {
+    width: 6rem;
   }
   
   .download-btn {
@@ -404,48 +421,3 @@
       flex: none;
     }
   }
-
-  @media screen and (min-width: 730px){
-    .portfolio-model-body{
-      padding: 40px;
-    }
-
-    .portfolio-close-btn{
-      font-size: 1.5em;
-    }
-
-    .portfolio-model-body h3{
-      font-size: 1.5em;
-    }
-  }
-
-  @media screen and (min-width: 320px){
-    .portfolio-model-body{
-      padding: 3px;
-    }
-
-    .portfolio-model-body h3{
-      font-size: 1.2em;
-      margin: 10px 0 0 10px;
-    }
-
-    .portfolio-close-btn{
-      font-size: 1.2em;
-    }
-
-    .portfolio-model-body img{
-      width: 94%;
-      margin: 20px 0 10px 10px;
-      border-radius: 10px;
-    }
-
-    .portfolio-model-body .cta {
-      margin: 10px 10px 20px 10px;
-    }
-    
-    .portfolio-model-body .cta,
-    .btn-bg {
-      gap: 1rem;
-    }
-  }
-  
