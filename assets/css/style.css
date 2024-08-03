@@ -421,15 +421,31 @@
 
   @media screen and (min-width: 320px){
     .portfolio-model-body{
-      padding: 10px;
+      padding: 3px;
+    }
+
+    .portfolio-model-body h3{
+      font-size: 1.2em;
+      margin: 10px 0 0 10px;
     }
 
     .portfolio-close-btn{
       font-size: 1.2em;
     }
 
-    .portfolio-model-body h3{
-      font-size: 1.2em;
+    .portfolio-model-body img{
+      width: 94%;
+      margin: 20px 0 10px 10px;
+      border-radius: 10px;
+    }
+
+    .portfolio-model-body .cta {
+      margin: 10px 10px 20px 10px;
+    }
+    
+    .portfolio-model-body .cta,
+    .btn-bg {
+      gap: 1rem;
     }
   }
   
