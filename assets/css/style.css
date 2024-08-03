@@ -9,6 +9,17 @@
     --btn-bg-color: #2196f3;
     --cta-hover-color: #167bce;
     --btn-bg-light: #eeeeee;
+
+    /* =======Background colors====== */
+    --body-bg-color: #0e1b31;
+    --card-bg-color: #132347;
+    --modal-bg-color: #102048;
+    --bg-transparent-color: rgba(255, 255, 255, 0.1);
+    --transparent-color-01: rgba(255, 255, 255, 0.1);
+    --line-color: #454f6b;
+
+    /* =======Box shadow====== */
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   
     /* Dark Theme */
     --dark-primary-bg-color: #222222;
@@ -129,7 +140,7 @@
   }
 
   .hero-info h1 img{
-    height: 24px;
+    height: 23px;
     object-fit: cover;
     margin-bottom: -5px;
   }
@@ -308,6 +319,66 @@
     border-radius: 0.5rem;
     flex-grow: 20;
     padding: 1rem;
+  }
+
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio-model{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--transparent-color-01);
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .portfolio-model.active{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .portfolio-model-body{
+    position: relative;
+    background: var(--primary-bg-color);
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .5s ease;
+  }
+
+  .portfolio-model.active .portfolio-model-body{
+    transform: translateY(0);
+  }
+  
+  .portfolio-close-btn{
+    position: absolute;
+    font-size: 1.5em;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .portfolio-model-body h3{
+    font-size: 1.5em;
+  }
+
+  .portfolio-model-body img{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
   }
   
   footer {
