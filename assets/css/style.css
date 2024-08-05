@@ -63,7 +63,6 @@
   .logo-container,
   .experience,
   .cta,
-  .cta-2,
   .portfolio-skills,
   .btn-bg,
   .portfolio,
@@ -155,7 +154,6 @@
   .logo-container,
   .experience,
   .cta,
-  .cta-2,
   .portfolio-skills,
   .btn-bg {
     justify-content: center;
@@ -186,13 +184,8 @@
   .cta {
     margin-top: 1.2rem;
   }
-
-  .cta-2 {
-    margin-top: 1rem;
-  }
   
   .cta,
-  .cta-2,
   .btn-bg {
     gap: 2rem;
   }
@@ -370,7 +363,8 @@
     transition: .5s ease;
   }
 
-  .portfolio-model.active .portfolio-model-body{
+  .portfolio-model.active 
+  .portfolio-model-body{
     transform: translateY(0);
   }
   
@@ -414,5 +408,11 @@
     .wrapper {
       width: calc(48%);
       flex: none;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .btn-3 {
+      width: 9rem;
     }
   }

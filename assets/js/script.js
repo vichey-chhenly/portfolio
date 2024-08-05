@@ -18,29 +18,6 @@ skillsBtn.addEventListener("click", (event) => {
   skillsBtn.classList.add("active-btn");
 });
 
-// Protfolio section - Modal
-const portfolioModals = document.querySelectorAll(".portfolio-model");
-const projectWrappers = document.querySelectorAll(".project-wrapper");
-const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
-
-var portfolioModal = function(modalClick){
-    portfolioModals[modalClick].classList.add("active");
-}
-
-projectWrappers.forEach((projectWrapper, i) => {
-  projectWrapper.addEventListener("click", () => {
-        portfolioModal(i);
-    });
-});
-
-portfolioCloseBtns.forEach((portfolioCloseBtn) => {
-    portfolioCloseBtn.addEventListener("click", () => {
-        portfolioModals.forEach((portfolioModalView) => {
-            portfolioModalView.classList.remove("active");
-        });
-    });
-});
-
 // Light & Dark Theme
 document.addEventListener("DOMContentLoaded", () => {
   const toggleThemeButton = document.getElementById("toggleTheme");
@@ -86,4 +63,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Load saved theme from local storage or default to light theme
   loadTheme();
+});
+
+// Protfolio section - Modal
+const portfolioModals = document.querySelectorAll(".portfolio-model");
+const projectWrappers = document.querySelectorAll(".project-wrapper");
+const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+
+var portfolioModal = function(modalClick){
+    portfolioModals[modalClick].classList.add("active");
+}
+
+projectWrappers.forEach((projectWrapper, i) => {
+  projectWrapper.addEventListener("click", () => {
+        portfolioModal(i);
+    });
+});
+
+portfolioCloseBtns.forEach((portfolioCloseBtn) => {
+    portfolioCloseBtn.addEventListener("click", () => {
+        portfolioModals.forEach((portfolioModalView) => {
+            portfolioModalView.classList.remove("active");
+        });
+    });
 });
