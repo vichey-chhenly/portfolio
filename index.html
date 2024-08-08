@@ -55,19 +55,49 @@
                 </div>
             </div>
         </section>
+
         <section class="experience">
             <h2><b>2</b> <br/>Years<br/>Frontend</h2>
             <h2><b>4</b> <br/>Years<br/>B.Sc in IT</h2>
             <h2><b>3</b> <br/>Satisfied<br/>Employers</h2>
         </section>
+
         <section class="cta">
             <a href="./assets/pdf/vichey_chhenly_CV.pdf" download>
-                <button class="btn download-btn">Download CV</button>
+                <button class="btn-top download-btn">Download CV</button>
             </a>
             <a href="mailto:chhenly.personal@gmail">
-                <button class="btn contact-btn">Contact Me</button>
+                <button class="btn-top contact-btn">Contact Me</button>
             </a>
+            <button class="btn-more" id="toggleButton" onclick="toggleVisibility()"></button>
         </section>
+
+        <section id="content">
+            <div class="about">
+                <div class="wrapper">
+                    <h3>About Me</h3>
+                    <div class="about-me">
+                        <h3>I am Vichey Chhenly</h3>
+                        <h4>A Lead <span>Frontend Developer</span> based in <span>Phnom Penh</span></h4>
+                        <p>I design and develop services for customers specializing creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through meaningful interactions.</p>
+                    </div>
+                </div>  
+                <div class="wrapper">
+                    <h3>Education</h3>
+                    <div class="education">
+                        <h3><i class="fa-solid fa-medal"></i>Information Technology</h3>
+                        <h4><i class="fa-solid fa-school-flag"></i>Royal University of Phnom Penh</h4>
+                        <p><i class="fa-solid fa-clock"></i>2022 - Present</p>
+                    </div>
+                    <div class="education">
+                        <h3><i class="fa-solid fa-medal"></i>Web Design</h3>
+                        <h4><i class="fa-solid fa-school-flag"></i>Rean Web</h4>
+                        <p><i class="fa-solid fa-clock"></i>2023 - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="portfolio-skills">
             <div class="btn-bg">
                 <button 
@@ -82,6 +112,7 @@
                 </button>
             </div>
         </section>
+
         <section class="portfolio" id="portfolio">
             <div class="wrapper project-wrapper">
                 <img src="./assets/img/project-1.png" alt="Project 1">
@@ -91,7 +122,7 @@
                     <i class="fas fa-times portfolio-close-btn"></i>
                     <h3>Online Store</h3>
                     <img src="./assets/img/project-1.png" alt="">
-                    <div class="cta">
+                    <div class="cta-1">
                         <a href="https://github.com/vichey-chhenly/shopping-app">
                             <button class="btn-3 contact-btn">GitHub</button>
                         </a>
@@ -109,7 +140,7 @@
                     <i class="fas fa-times portfolio-close-btn"></i>
                     <h3>Newspaper</h3>
                     <img src="./assets/img/project-2.png" alt="">
-                    <div class="cta">
+                    <div class="cta-1">
                         <a href="https://github.com/vichey-chhenly/sabay-project">
                             <button class="btn-3 contact-btn">GitHub</button>
                         </a>
@@ -127,7 +158,7 @@
                     <i class="fas fa-times portfolio-close-btn"></i>
                     <h3>Portfolio</h3>
                     <img src="./assets/img/project-3.png" alt="">
-                    <div class="cta">
+                    <div class="cta-1">
                         <a href="mailto:chhenly.personal@gmail">
                             <button class="btn-3 contact-btn">GitHub</button>
                         </a>
@@ -145,7 +176,7 @@
                     <i class="fas fa-times portfolio-close-btn"></i>
                     <h3>University Website</h3>
                     <img src="./assets/img/project-4.png" alt="">
-                    <div class="cta">
+                    <div class="cta-1">
                         <a href="https://github.com/vichey-chhenly/rupp-project-tailwindcss">
                             <button class="btn-3 contact-btn">GitHub</button>
                         </a>
@@ -156,6 +187,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="skills" id="skills">
             <div class="wrapper">
                 <h3>Frontend</h3>

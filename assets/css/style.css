@@ -7,7 +7,7 @@
     --primary-text-color: #000000;
     --secondary-color: #575757;
     --btn-bg-color: #2196f3;
-    --cta-hover-color: #167bce;
+    --cta-1-hover-color: #167bce;
     --btn-bg-light: #eeeeee;
 
     /* Background colors */
@@ -21,7 +21,7 @@
     --dark-primary-text-color: #ffffff;
     --dark-secondary-color: #828282;
     --dark-btn-bg-color: #1e88e5;
-    --dark-cta-hover-color: #0d5e8c;
+    --dark-cta-1-hover-color: #0d5e8c;
     --dark-btn-bg-light: #eeeeee;
   }
   
@@ -30,7 +30,7 @@
     --primary-text-color: var(--dark-primary-text-color);
     --secondary-color: var(--dark-secondary-color);
     --btn-bg-color: var(--dark-btn-bg-color);
-    --cta-hover-color: var(--dark-cta-hover-color);
+    --cta-1-hover-color: var(--dark-cta-1-hover-color);
     --btn-bg-light: var(--dark-btn-bg-light);
   }
 
@@ -52,6 +52,7 @@
   h1,
   h2,
   h3,
+  h4,
   p {
     margin: 0;
     cursor: default;
@@ -63,8 +64,10 @@
   .logo-container,
   .experience,
   .cta,
+  .cta-1,
   .portfolio-skills,
   .btn-bg,
+  .about,
   .portfolio,
   .skills {
     display: flex;
@@ -72,6 +75,7 @@
   
   .hero,
   .portfolio,
+  .about,
   .skills {
     flex-direction: column;
   }
@@ -79,6 +83,7 @@
   .hero,
   .btn-bg,
   .portfolio,
+  .about,
   .skills {
     align-items: center;
   }
@@ -88,11 +93,26 @@
   .wrapper {
     text-align: center;
   }
+
+  .wrapper
+  .about-me {
+    border-bottom: 3px solid var(--btn-bg-color);
+  }
+
+  .wrapper 
+  .about-me p {
+    text-align: justify;
+  }
+
+  .education {
+    text-align: left;
+  }
   
   article,
   .hero,
   .logo-container,
   .portfolio,
+  .about,
   .skills {
     gap: 1rem;
   }
@@ -141,8 +161,20 @@
   }
   
   article p,
+  .about-me p,
+  .education p,
   .hero-info h2 {
     color: var(--secondary-color);
+  }
+
+  .wrapper .education {
+    margin-top: 20px;
+    border-bottom: 3px solid var(--btn-bg-color);
+  }
+
+  .wrapper .education i{
+    color: var(--secondary-color);
+    margin-right: 10px;
   }
   
   .hero-info h2 {
@@ -154,6 +186,7 @@
   .logo-container,
   .experience,
   .cta,
+  .cta-1,
   .portfolio-skills,
   .btn-bg {
     justify-content: center;
@@ -181,15 +214,22 @@
     font-size: 0.9rem;
   }
   
-  .cta {
+  .cta,
+  .cta-1 {
     margin-top: 1.2rem;
   }
   
-  .cta,
+  .cta {
+    gap: 0.5rem;
+  }
+
+  .cta-1,
   .btn-bg {
     gap: 2rem;
   }
   
+  .btn-top,
+  .btn-more,
   .btn,
   .btn-2,
   .btn-3,
@@ -198,6 +238,8 @@
     border: none;
   }
   
+  .btn-top,
+  .btn-more,
   .btn,
   .btn-2,
   .btn-3,
@@ -205,7 +247,14 @@
   .wrapper h3 {
     font-weight: 600;
   }
+
+  .about-me h4,
+  .education h4 {
+    font-weight: 500;
+  }
   
+  .btn-top,
+  .btn-more,
   .btn,
   .btn-2,
   .btn-3,
@@ -217,7 +266,7 @@
   }
   
   .download-btn:hover {
-    background-color: var(--cta-hover-color);
+    background-color: var(--cta-1-hover-color);
   }
   
   .theme-btn,
@@ -228,6 +277,7 @@
     cursor: pointer;
   }
   
+  .btn-top:hover,
   .btn:hover,
   .btn-2:hover,
   .btn-3:hover,
@@ -236,6 +286,7 @@
     transform: scale(0.98);
   }
   
+  .btn-top:active,
   .btn:active,
   .btn-2:active,
   .btn-3:active,
@@ -259,10 +310,21 @@
     background-color: white;
   }
   
+  .btn-top,
+  .btn-more,
   .btn,
   .btn-2,
   .btn-3 {
     height: 3rem;
+  }
+
+  .btn-top {
+    width: 8rem;
+  }
+
+  .btn-more {
+    width: 3rem;
+    cursor: pointer;
   }
   
   .btn {
@@ -280,6 +342,26 @@
   .download-btn {
     transition: background-color 0.3s ease;
   }
+
+  #toggleButton::after {
+    content: '▼';
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#toggleButton.hide::after {
+    transform: rotate(-180deg);
+}
+
+#content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+#content.show {
+    max-height: 100%;
+}
+
   
   .portfolio-skills {
     height: 4rem;
@@ -293,14 +375,21 @@
   }
   
   article p,
+  .about-me,
+  .education,
   .btn-bg {
     background-color: var(--btn-bg-light);
   }
   
   .hero,
   .portfolio,
+  .about,
   .skills {
     margin-top: 2rem;
+  }
+
+  span {
+    color: var(--cta-1-hover-color);
   }
   
   .skills {
@@ -315,12 +404,27 @@
   .wrapper h3 {
     margin-bottom: 1.5rem;
   }
+
+  .about-me h3,
+  .education h3 {
+    font-weight: 500;
+  }
+  
+  .about-me h3,
+  .about-me h4,
+  .education h3,
+  .education h4 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-primary-bg-color);
+  }
   
   article {
     flex-wrap: wrap;
   }
   
-  article p {
+  article p,
+  .about-me,
+  .education {
     border-radius: 0.5rem;
     flex-grow: 20;
     padding: 1rem;
@@ -393,6 +497,7 @@
   
   @media screen and (min-width: 900px) {
     .skills,
+    .about,
     .portfolio {
       flex-direction: row;
       width: 45rem;
@@ -400,6 +505,7 @@
     .skills {
       margin: 2rem auto 0;
     }
+    .about,
     .portfolio {
       margin: 2rem auto;
       flex-wrap: wrap;
