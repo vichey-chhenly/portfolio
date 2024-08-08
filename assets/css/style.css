@@ -100,13 +100,14 @@
     margin-bottom: 20px;
   }
 
+  .wrapper
+  .about-top img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
   .wrapper 
   .about-me p {
     text-align: justify;
-  }
-
-  .education {
-    text-align: left;
   }
   
   article,
@@ -169,7 +170,8 @@
   }
 
   .wrapper .education {
-    margin-top: 20px;
+    text-align: left;
+    margin-top: 26.5px;
     border-bottom: 3px solid var(--btn-bg-color);
   }
 
@@ -247,6 +249,15 @@
   .btn-bg,
   .wrapper h3 {
     font-weight: 600;
+  }
+
+  .education h4 a {
+    text-decoration: none;
+    color: var(--dark-primary-bg-color);
+  }
+
+  .education h4 a:hover {
+    color: var(--secondary-color);
   }
 
   .about-me h4,
@@ -376,7 +387,7 @@
   }
   
   article p,
-  .about-me,
+  .about-top,
   .education,
   .btn-bg {
     background-color: var(--btn-bg-light);
@@ -410,6 +421,10 @@
   .education h3 {
     font-weight: 500;
   }
+
+  .about-me h3 {
+    margin-top: -10px;
+  }
   
   .about-me h3,
   .about-me h4,
@@ -429,6 +444,10 @@
     border-radius: 0.5rem;
     flex-grow: 20;
     padding: 1rem;
+  }
+
+  .about-top {
+    border-radius: 0.5rem;
   }
 
   .flex-center{
