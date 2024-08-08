@@ -97,6 +97,7 @@
   .wrapper
   .about-me {
     border-bottom: 3px solid var(--btn-bg-color);
+    margin-bottom: 20px;
   }
 
   .wrapper 
@@ -514,6 +515,9 @@
     .wrapper {
       width: calc(48%);
       flex: none;
+    }
+    .wrapper .about-me {
+      margin-bottom: 0;
     }
   }
 
