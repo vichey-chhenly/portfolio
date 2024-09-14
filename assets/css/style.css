@@ -370,7 +370,6 @@
     max-height: 0;
     overflow: hidden;
     transition: 0.5s;
-    margin-bottom: 50px;
 }
 
 #content.show {
@@ -452,6 +451,10 @@
 
   .about-top {
     border-radius: 0.5rem;
+  }
+
+  .about {
+    margin-bottom: 25px;
   }
 
   .flex-center{
@@ -542,9 +545,7 @@
     .wrapper .about-me {
       margin-bottom: 0;
     }
-    #content {
-      margin-bottom: 0;
-    }
+   
   }
 
   @media screen and (min-width: 600px) {
