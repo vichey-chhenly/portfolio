@@ -173,6 +173,7 @@
     text-align: left;
     margin-top: 26.5px;
     border-bottom: 3px solid var(--btn-bg-color);
+    margin-bottom: 0px;
   }
 
   .wrapper .education i{
@@ -369,6 +370,7 @@
     max-height: 0;
     overflow: hidden;
     transition: 0.5s;
+    margin-bottom: 50px;
 }
 
 #content.show {
@@ -538,6 +540,9 @@
       flex: none;
     }
     .wrapper .about-me {
+      margin-bottom: 0;
+    }
+    #content {
       margin-bottom: 0;
     }
   }
